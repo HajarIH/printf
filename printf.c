@@ -25,14 +25,14 @@ int _printf (const char *format, ...)
 			}
 			else if (*format == 'c')
 			{
-				char a = va_arg ( argument , char );
+				char a = va_arg ( argument , int );
 			       	write ( 1 , &a , 1 ) ;
 				nombre++ ;
 			}
 			else if ( *format == 's' )
 			{
 				char *string = va_arg ( argument , char* ) ; 
-				afficher_chaine( char *string ) ;
+				afficher_chaine(*string) ;
 				nombre = nombre + strlen(string) ;
 			}
 		}
