@@ -23,13 +23,13 @@ int _printf (const char *format, ...)
 				afficher_pourcentage();
 				nombre++ ;
 			}
-			elseif (*format == 'c')
+			else if (*format == 'c')
 			{
 				char a = va_arg ( argument , char );
 			       	write ( 1 , &a , 1 ) ;
 				nombre++ ;
 			}
-			elseif ( *format == 's' )
+			else if ( *format == 's' )
 			{
 				char *string = va_arg ( argument , char* ) ; 
 				afficher_chaine( char *string ) ;
