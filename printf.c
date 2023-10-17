@@ -32,7 +32,7 @@ int _printf (const char *format, ...)
 			else if ( *format == 's' )
 			{
 				char *string = va_arg ( argument , char* ) ; 
-				afficher_chaine(*string) ;
+				afficher_chaine(string) ;
 				nombre = nombre + strlen(string) ;
 			}
 		}
