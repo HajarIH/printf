@@ -35,6 +35,12 @@ int _printf (const char *format, ...)
 				afficher_chaine(string) ;
 				nombre = nombre + strlen(string) ;
 			}
+			else if ( *format == 'd' )
+                        {
+                                int n = va_arg ( argument , n ) ;
+                                afficher_int(n) ;
+                                nombre = nombre + n % 10 ;
+                        }
 		}
 		format++ ;
 	}
