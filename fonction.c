@@ -23,6 +23,7 @@ void afficher_pourcentage()
 
 void afficher_int(int n) 
 {
+	int i;
 
   if (n < 0) 
   {
@@ -34,7 +35,6 @@ void afficher_int(int n)
     n = -n;
   }
 
-  int i ;
   for (i = 10; i >= 0; i--) 
   {
     int digit = n / i;
