@@ -10,5 +10,6 @@ int _printf(const char *format, ...);
 void afficher_pourcentage();
 void afficher_chaine(char *chaine);
 
+void afficher_int(int n);
 
 #endif
