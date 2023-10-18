@@ -34,8 +34,7 @@ void afficher_int(int n)
     n = -n;
   }
 
-  int i = 0;
- 
+  int i ;
   for (i = 10; i >= 0; i--) 
   {
     int digit = n / i;
