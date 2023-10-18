@@ -37,7 +37,7 @@ int _printf (const char *format, ...)
 			}
 			else if ( *format == 'd' )
                         {
-                                int n = va_arg ( argument , n ) ;
+                                int n = va_arg ( argument , int ) ;
                                 afficher_int(n) ;
                                 nombre = nombre + n % 10 ;
                         }
